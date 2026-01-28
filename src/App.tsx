@@ -15,6 +15,13 @@ import './App.css';
 // import.meta.env.BASE_URL автоматически берется из vite.config.ts base
 const basename = import.meta.env.BASE_URL || '/';
 
+// Отладочный вывод (можно удалить после проверки)
+if (typeof window !== 'undefined') {
+  console.log('Base URL:', import.meta.env.BASE_URL);
+  console.log('Basename for Router:', basename);
+  console.log('Current location:', window.location.pathname);
+}
+
 function App() {
   return (
     <Router basename={basename}>
