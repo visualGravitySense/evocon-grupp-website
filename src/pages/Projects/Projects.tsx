@@ -15,7 +15,7 @@ const projects = [
     year: '2015-2016',
     description: '4800 m³ betoonitöid, 7300 m² montaažitöid, 55 rõdu paigaldus',
     gradient: 'from-blue-500 to-blue-700',
-    image: '/tivoli-kortermajad.jpg',
+    image: getAssetPath('tivoli-kortermajad.jpg'),
     icon: <Building2 className="w-8 h-8" />,
     stats: { 
       concrete: '4800 m³ betoonitöid', 
