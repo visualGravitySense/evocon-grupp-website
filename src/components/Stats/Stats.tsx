@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import { Link } from 'react-router-dom';
+import { getAssetPath } from "@/lib/utils"
 
 const stats = [
   { 
@@ -138,7 +139,7 @@ const Stats = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/evocon-works-main.jpg)'
+          backgroundImage: `url(${getAssetPath("evocon-works-main.jpg")})`
         }}
       >
         {/* Overlay слой для затемнения и улучшения читаемости */}

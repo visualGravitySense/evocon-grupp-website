@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { getAssetPath } from "@/lib/utils"
 
 const advantages = [
   {
@@ -219,7 +220,7 @@ const WhyUs = () => {
             <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl p-8 lg:p-10 text-white shadow-2xl relative overflow-hidden border-4 border-blue-500/20">
               {/* Фоновое изображение */}
               <img 
-                src="/tunnustused.jpg" 
+                src={getAssetPath("tunnustused.jpg")} 
                 alt="Tunnustused"
                 className="absolute inset-0 w-full h-full object-cover"
               />

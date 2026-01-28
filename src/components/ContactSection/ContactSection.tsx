@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Sparkles, Clock, CheckCircle, ArrowRight, ExternalLink } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,7 +76,7 @@ const ContactSection = () => {
       {/* Фоновый паттерн */}
       <div className="absolute inset-0">
         <img 
-          src="/pattern-1.jpg" 
+          src={getAssetPath("pattern-1.jpg")} 
           alt="Pattern background"
           className="w-full h-full object-cover"
         />

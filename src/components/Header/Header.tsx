@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, CheckCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center group gap-2 lg:gap-3">
             <img 
-              src="/evocon-brand-1.svg" 
+              src={getAssetPath("evocon-brand-1.svg")} 
               alt="EvoCon Grupp OÜ Logo" 
               className="h-8 w-auto lg:h-10 xl:h-12 transition-transform group-hover:scale-105"
             />

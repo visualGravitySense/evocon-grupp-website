@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Award, Sparkles, CheckCircle, Star, ArrowRight, Trophy } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 const Certificates = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -56,7 +57,7 @@ const Certificates = () => {
             <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-2xl p-10 lg:p-12 text-white text-center shadow-2xl relative overflow-hidden group hover:shadow-3xl transition-all duration-300">
               {/* Фоновое изображение */}
               <img 
-                src="/tunnustused-ja-sertifikaadid.jpg" 
+                src={getAssetPath("tunnustused-ja-sertifikaadid.jpg")} 
                 alt="Tunnustused ja sertifikaadid"
                 className="absolute inset-0 w-full h-full object-cover"
               />

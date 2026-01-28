@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 const services = [
   {
@@ -296,7 +297,7 @@ const ServicesSection = () => {
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
-                backgroundImage: 'url(/why-choose-us.jpg)'
+                backgroundImage: `url(${getAssetPath("why-choose-us.jpg")})`
               }}
             >
               {/* Overlay слой для затемнения и улучшения читаемости */}
