@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
@@ -15,9 +16,28 @@ import './App.css';
 // import.meta.env.BASE_URL автоматически берется из vite.config.ts base
 const basename = import.meta.env.BASE_URL || '/';
 
+// Компонент для обработки перенаправления из 404.html
+function RedirectHandler() {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    // Проверяем, есть ли сохраненный путь от 404.html
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath) {
+      // Очищаем sessionStorage
+      sessionStorage.removeItem('redirectPath');
+      // Перенаправляем на сохраненный путь
+      navigate(redirectPath, { replace: true });
+    }
+  }, [navigate]);
+  
+  return null;
+}
+
 function App() {
   return (
     <Router basename={basename}>
+      <RedirectHandler />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header />

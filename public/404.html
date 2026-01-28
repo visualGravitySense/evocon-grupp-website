@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvoCon Grupp OÜ - Ehitusettevõte Eestis</title>
+    <script>
+      // GitHub Pages 404 redirect для SPA (Single Page Application)
+      // Автоматически определяем base path и перенаправляем на index.html
+      // React Router обработает маршрут после загрузки
+      
+      (function() {
+        // Определяем base path из текущего URL
+        // Если URL содержит /evocon-grupp-website/, то base path = /evocon-grupp-website/
+        // Иначе base path = /
+        const path = window.location.pathname;
+        let basePath = '/';
+        
+        // Проверяем, есть ли в пути название репозитория
+        const repoMatch = path.match(/^\/([^\/]+)\//);
+        if (repoMatch && repoMatch[1] !== '') {
+          // Если это не username.github.io, используем base path с именем репозитория
+          basePath = '/' + repoMatch[1] + '/';
+        }
+        
+        // Сохраняем оригинальный путь для React Router
+        const originalPath = path.replace(basePath, '') || '/';
+        sessionStorage.setItem('redirectPath', originalPath);
+        
+        // Перенаправляем на index.html
+        window.location.replace(basePath + 'index.html');
+      })();
+    </script>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; color: #666;">
+      <p>Загрузка...</p>
+    </div>
+  </body>
+</html>
