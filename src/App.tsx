@@ -12,6 +12,7 @@ import './App.css';
 // Получаем base path из Vite (автоматически устанавливается при сборке)
 // Для GitHub Pages это будет '/evocon-grupp-website/'
 // Для локальной разработки это будет '/'
+// import.meta.env.BASE_URL автоматически берется из vite.config.ts base
 const basename = import.meta.env.BASE_URL || '/';
 
 function App() {
