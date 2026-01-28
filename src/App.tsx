@@ -9,9 +9,14 @@ import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import './App.css';
 
+// Получаем base path из Vite (автоматически устанавливается при сборке)
+// Для GitHub Pages это будет '/evocon-grupp-website/'
+// Для локальной разработки это будет '/'
+const basename = import.meta.env.BASE_URL || '/';
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header />
