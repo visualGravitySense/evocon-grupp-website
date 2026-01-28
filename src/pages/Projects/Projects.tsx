@@ -4,6 +4,7 @@ import { MapPin, Calendar, ArrowRight, Sparkles, Award, TrendingUp, Phone, Messa
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 const projects = [
   {
@@ -31,7 +32,7 @@ const projects = [
     year: '2017-2018',
     description: '7900 m³ betoonitöid',
     gradient: 'from-indigo-500 to-indigo-700',
-    image: '/WoHo-ari-ja-eluhoone.jpg',
+    image: getAssetPath('WoHo-ari-ja-eluhoone.jpg'),
     icon: <Building2 className="w-8 h-8" />,
     stats: { 
       concrete: '7900 m³ betoonitöid'
@@ -46,7 +47,7 @@ const projects = [
     year: '2017-2018',
     description: '2358 ühiku betoonelemendi paigaldust, 10900 m² montaažitöid',
     gradient: 'from-purple-500 to-purple-700',
-    image: '/ektorpsvagen-nacka-kortermaja.jpg',
+    image: getAssetPath('ektorpsvagen-nacka-kortermaja.jpg'),
     icon: <Building2 className="w-8 h-8" />,
     stats: { 
       elements: '2358 ühiku betoonelemendi paigaldust', 
@@ -62,7 +63,7 @@ const projects = [
     year: '2016',
     description: '2550 m³ betoonitöid',
     gradient: 'from-green-500 to-green-700',
-    image: '/kohtla-jarve-reoveepuhasti.jpg',
+    image: getAssetPath('kohtla-jarve-reoveepuhasti.jpg'),
     icon: <Factory className="w-8 h-8" />,
     stats: { 
       concrete: '2550 m³ betoonitöid'
@@ -77,7 +78,7 @@ const projects = [
     year: '2016-2017',
     description: '280 m³ betoonitöid, 1374 m² montaažitöid',
     gradient: 'from-orange-500 to-orange-700',
-    image: '/lookivi-park-logistikakeskus.jpg',
+    image: getAssetPath('lookivi-park-logistikakeskus.jpg'),
     icon: <Warehouse className="w-8 h-8" />,
     stats: { 
       concrete: '280 m³ betoonitöid', 
@@ -93,7 +94,7 @@ const projects = [
     year: '2017',
     description: '2200 m³ betoonitöid, 850 m² montaažitöid',
     gradient: 'from-yellow-500 to-yellow-700',
-    image: '/kehra-elektrijaam.jpg',
+    image: getAssetPath('kehra-elektrijaam.jpg'),
     icon: <ZapIcon className="w-8 h-8" />,
     stats: { 
       concrete: '2200 m³ betoonitöid', 
@@ -109,7 +110,7 @@ const projects = [
     year: '2017-2018',
     description: '30 m³ betoonlagi, 248 ühikut betoonelementide paigaldust, 2900 m² montaažitöid',
     gradient: 'from-red-500 to-red-700',
-    image: '/karulaugu-spordikeskus.jpg',
+    image: getAssetPath('karulaugu-spordikeskus.jpg'),
     icon: <Home className="w-8 h-8" />,
     stats: { 
       ceiling: '30 m³ betoonlagi', 

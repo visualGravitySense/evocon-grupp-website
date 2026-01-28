@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 import './Services.css';
 
 const services = [
@@ -29,7 +30,7 @@ const services = [
     color: 'from-blue-500 to-blue-600',
     bgColor: 'bg-blue-50',
     borderColor: 'border-blue-200',
-    image: '/peatoovott-ja-projektijuhtimine.jpg'
+    image: getAssetPath('peatoovott-ja-projektijuhtimine.jpg')
   },
   {
     id: 'ehitusalane-konsultatsioon',
@@ -53,7 +54,7 @@ const services = [
     color: 'from-yellow-500 to-yellow-600',
     bgColor: 'bg-yellow-50',
     borderColor: 'border-yellow-200',
-    image: '/ehitusalane-konsultatsioon.jpg'
+    image: getAssetPath('ehitusalane-konsultatsioon.jpg')
   },
   {
     id: 'betoonitööd',
@@ -77,7 +78,7 @@ const services = [
     color: 'from-green-500 to-green-600',
     bgColor: 'bg-green-50',
     borderColor: 'border-green-200',
-    image: '/betooni-ja-montaazitood.jpg'
+    image: getAssetPath('betooni-ja-montaazitood.jpg')
   },
   {
     id: 'betoonpõrandad',
@@ -101,7 +102,7 @@ const services = [
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50',
     borderColor: 'border-purple-200',
-    image: '/betoonporandad.jpg'
+    image: getAssetPath('betoonporandad.jpg')
   },
   {
     id: 'omanikujärelvalve',
@@ -125,7 +126,7 @@ const services = [
     color: 'from-indigo-500 to-indigo-600',
     bgColor: 'bg-indigo-50',
     borderColor: 'border-indigo-200',
-    image: '/omanikujarelvalve.jpg'
+    image: getAssetPath('omanikujarelvalve.jpg')
   },
   {
     id: 'transporditeenus',
@@ -149,7 +150,7 @@ const services = [
     color: 'from-orange-500 to-orange-600',
     bgColor: 'bg-orange-50',
     borderColor: 'border-orange-200',
-    image: '/transporditeenused.jpg'
+    image: getAssetPath('transporditeenused.jpg')
   }
 ];
 

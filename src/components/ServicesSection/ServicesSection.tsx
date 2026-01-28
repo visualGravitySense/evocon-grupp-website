@@ -13,7 +13,7 @@ const services = [
     description: 'Oleme oma klientidele partner, kes leiab innovaatilisi ja optimaalseid lahendusi kiirelt ja kvaliteetselt.',
     benefits: ['Täielik projektijuhtimine', 'Kvaliteetne täitmine', 'Ajagraafiku järgimine'],
     color: 'from-blue-500 to-blue-600',
-    image: '/peatoovott-ja-projektijuhtimine.jpg'
+    image: getAssetPath('peatoovott-ja-projektijuhtimine.jpg')
   },
   {
     icon: <Lightbulb className="w-6 h-6" />,
@@ -21,7 +21,7 @@ const services = [
     description: 'Nõustame tellijat kõigis ehitusalastes küsimustes alates ehitusprotsessi ettevalmistamisest kuni lõpuni.',
     benefits: ['Tasuta konsultatsioon', 'Kogenud spetsialistid', 'Individuaalne lähenemine'],
     color: 'from-yellow-500 to-yellow-600',
-    image: '/ehitusalane-konsultatsioon.jpg'
+    image: getAssetPath('ehitusalane-konsultatsioon.jpg')
   },
   {
     icon: <Hammer className="w-6 h-6" />,
@@ -29,7 +29,7 @@ const services = [
     description: 'Oleme teinud väga palju betooni- ja montaažitöid nii suurtele peatöövõtjatele kui eraklientidele.',
     benefits: ['Kõrge kvaliteet', 'Kiire täitmine', 'Konkurentsivõimeline hind'],
     color: 'from-green-500 to-green-600',
-    image: '/betooni-ja-montaazitood.jpg'
+    image: getAssetPath('betooni-ja-montaazitood.jpg')
   },
   {
     icon: <Wrench className="w-6 h-6" />,
@@ -37,7 +37,7 @@ const services = [
     description: 'Omame pikaajalist töökogemust betoonpõrandate valamisel. Tagame kõrgkvaliteetse tulemuse.',
     benefits: ['12+ aastat kogemust', 'Garantii kvaliteedile', 'Kaasaegsed meetodid'],
     color: 'from-purple-500 to-purple-600',
-    image: '/betoonporandad.jpg'
+    image: getAssetPath('betoonporandad.jpg')
   },
   {
     icon: <Users className="w-6 h-6" />,
@@ -45,7 +45,7 @@ const services = [
     description: 'Esindame ja kaitseme tellija huve ehitusprotsessis, kindlustame kvaliteedi ja tööde kulgemise.',
     benefits: ['Tellija huvide kaitsmine', 'Kvaliteedi kontroll', 'Protsessi jälgimine'],
     color: 'from-indigo-500 to-indigo-600',
-    image: '/omanikujarelvalve.jpg'
+    image: getAssetPath('omanikujarelvalve.jpg')
   },
   {
     icon: <Truck className="w-6 h-6" />,
@@ -53,7 +53,7 @@ const services = [
     description: 'Oma tõstekraanadega varustatud masinate abil transpordime suuri detaile ja ehitusmaterjale.',
     benefits: ['Oma tehnika', 'Kiire kohaletoimetamine', 'Turvaline transport'],
     color: 'from-orange-500 to-orange-600',
-    image: '/transporditeenused.jpg'
+    image: getAssetPath('transporditeenused.jpg')
   }
 ];
 

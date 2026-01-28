@@ -4,6 +4,7 @@ import { MapPin, Calendar, ArrowRight, Sparkles, Award, TrendingUp, X, ZoomIn, E
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 const topProjects = [
   {
@@ -14,7 +15,7 @@ const topProjects = [
     year: '2015-2016',
     description: '4800 m³ betoonitöid, 7300 m² montaažitöid, 55 rõdu paigaldus',
     gradient: 'from-blue-500 to-blue-700',
-    image: '/tivoli-kortermajad.jpg',
+    image: getAssetPath('tivoli-kortermajad.jpg'),
     stats: { concrete: '4800 m³', assembly: '7300 m²', balconies: '55' }
   },
   {
@@ -25,7 +26,7 @@ const topProjects = [
     year: '2017-2018',
     description: '7900 m³ betoonitöid',
     gradient: 'from-indigo-500 to-indigo-700',
-    image: '/WoHo-ari-ja-eluhoone.jpg',
+    image: getAssetPath('WoHo-ari-ja-eluhoone.jpg'),
     stats: { concrete: '7900 m³' }
   },
   {
@@ -36,7 +37,7 @@ const topProjects = [
     year: '2017-2018',
     description: '2358 ühiku betoonelemendi paigaldust, 10900 m² montaažitöid',
     gradient: 'from-purple-500 to-purple-700',
-    image: '/ektorpsvagen-nacka-kortermaja.jpg',
+    image: getAssetPath('ektorpsvagen-nacka-kortermaja.jpg'),
     stats: { elements: '2358 ühikut', assembly: '10900 m²' }
   }
 ];
